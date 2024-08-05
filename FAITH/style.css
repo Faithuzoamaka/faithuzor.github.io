@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('./');
+}
+.maq{
+    background: #080808;
+    padding: 10px;
+    color: white;
+    width: 100%;
+   color: gold
+
+}
+.menu{
+    width: 100%;
+    background: #000060;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-left: 20px;
+    width: 100%;
+    position: sticky;
+    top: 0%;
+    margin: 0px;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 10px;
+}
+.menu ul li{
+    list-style: none;
+    padding: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #eeffee;
+    padding: 10px;
+}
+.menu ul li a:hover{
+    color: gold;
+    border-bottom: 2px solid;
+    height: 25px;
+    transition: 5s;
+}
+.menu .log{
+    border: 2px gold solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/*for the content*/
+
+.bod{
+    background: oldlace;
+    width: 100%;
+    line-height: 25px;
+    padding: 5px;
+}
+.bod #redirect{
+    text-decoration: none;
+    border: 2px solid gold;
+    font-size: 30px;
+    font-weight: bolder;
+}
+h1{
+    color: #000060;
+    font-weight: bold;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+h3{
+    color: navy;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#redirect{
+    font-weight: 30px;
+    text-transform: uppercase;
+
+}
+/*Registration*/
+.tutorial{
+    background: burlywood;
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    padding: 10px;   
+}
+.regi{
+    padding: 15px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    width: 550px;
+    
+    
+}
+.lbl1{
+    color: white;
+    height: 35px;
+    width: 500px;
+    background: transparent;
+    border: 2px solid gold;
+    border-radius: 10px;
+    font-size: 25px;
+    outline: none;
+
+}
+.lbl{
+    color:white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.btn{
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    background: navy;
+    border: 2px solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
+}
+.btn:hover{
+    transition: 3s;
+    color: gold;
+    cursor: pointer;
+}
+.regi .rg{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+@media(max-width: 650px){
+    .regi{
+        width: 500px;
+    }
+    .lbl1{
+        color: white;
+        height: 30px;
+        width: 300px;
+    }
+    .tutorial{
+        display: block;
+        flex-direction: column;
+    }
+    .footer{
+        display: block;
+        flex-direction: column;
+    }
+    .gallery{
+        display: block;
+        flex-direction: column;
+    }
+    .mega{
+        display: block;
+        flex-direction: column;
+    }
+    .into{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.into{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 0 30px;
+}
+.intro{
+    background: gold;
+    color: navy;
+    width: 500px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.faith{
+    border: 2px solid gold;
+    border-radius: 100%;
+}
+.into .fai{
+    color: balck;
+}
+.ab{
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+textarea{
+    background: transparent;
+    border: 2px solid gold;
+    color: white;
+    font-size: 20px;
+    position: inherit;
+}
+.footer{
+    background: #000060;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.foot{
+    margin: 15px;
+}
+.galla{
+    background: oldlace;
+}
+.gallery{
+    display: flex;
+    justify-items: center;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    width: 20%;
+
+}
+.bk{
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid;
+    padding: 5px;
+    text-decoration: none;
+}
+.check{
+    margin: 15px;
+}

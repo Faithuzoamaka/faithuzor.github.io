@@ -1,0 +1,719 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./sjs1.jpg");
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+.heading{
+    background-color:#000030;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: medium;
+}
+.email{
+    color: white;
+    font-weight: bold;
+}
+.heading .email a{
+    color: white;
+    list-style: none;
+}
+#face{
+    color: white;
+justify-items: flex-end;
+}
+#face:hover{
+    color: gold;
+}
+/*for links and menu*/
+
+.links{
+    width: 100%;
+    background-color: white;
+    font: 35px;
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.links ul{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    font: 35px;
+
+}
+.links ul li{
+    list-style: none;
+    display: block;
+}
+.links ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font: 35px;
+}
+.links ul li:hover{
+    border: none;
+    border-bottom: 2px solid;
+}
+.links-menu .formation{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.links-menu .apostolate{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    
+   
+}
+
+.links .links-menu{
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* for sub-links*/
+ol{
+    top: 35px;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 350px;
+}
+ul li ol{
+    float: none;
+}
+ul li:hover ol{
+    display: block;
+    border-bottom: none;
+}
+
+
+.link .menu{
+    justify-content: space-between;
+}
+.menu{
+    display: block;
+    padding-right: 15px;
+}
+.men{
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+
+}
+.menu a:hover{
+    color: gold;
+}
+
+/* For small windows*/
+@media(max-width:500px){
+    .links .links-menu{
+        /*display: none;*/
+    }
+    .links .links-menu.active{
+        display: flex;
+    }
+    .links{
+        display: block;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links ul{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .links ul li:hover{
+        border: none;
+        
+    }
+    
+    
+    .menu{
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+.home{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: white;
+    margin-top: none;
+    padding: 5px;
+    padding-bottom: 10px;
+    height: 250px;
+    text-align: center;
+    font-weight: bold;
+}
+.home .abt-us{
+    padding-top: 5%;
+    font-size: 40px;
+}
+.home .abt{
+    color: white;
+    justify-content: center;
+    font-size: 20px;
+}
+.ahome .abt{
+    text-decoration: none;
+}
+.ahome .abt:hover{
+    color: gold;
+}
+/*for another section that starts with picture of Jesus*/
+.jesus{
+    max-width: 400px;
+    border-radius: 10px;
+    height: 600px;
+    padding-top: 8%;
+}
+.container{
+    background-color: gainsboro;
+    margin: 10px;
+    padding: 15px;
+    font-size: 25px; 
+    display: flex;
+    justify-content: space-between;
+}
+.committed{
+    color:navy;
+}
+
+/*for charism*/
+.charism{
+    background-color: gainsboro;
+    margin: 10px;
+    padding: 15px;  
+    font-size: 25px;
+}
+h2{
+    text-align: center;
+    color: navy;
+    font-weight: bold;
+    font-size: 35px;
+}
+.cahrism .chari{
+    justify-content: center;
+    text-align: center;
+    justify-items: center; 
+}
+.our-mission{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    text-align: center;
+    height: 400px;
+    color: white;
+    font-size: 35px;
+    padding-top: 3%;
+}
+.our-mission .mission{
+    font: 5px;
+}
+.number{
+    background-image:url('./jesus.jpg');
+    width: 100;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    justify-items: center;
+    line-height: 10px;
+}
+.sister{
+    padding-top: 5%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.school{
+    padding-top: 5%; 
+    font-size: 25px;
+    font-weight: bolder;
+}
+.ophanage{
+    padding-top: 5%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.hospital{
+    padding-top: 5%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+/* for our team*/
+.our-team{
+    background-color:oldlace;
+    padding: 10px;
+    justify-content: center;
+    height: auto;
+}
+.team{
+    font-size:35px ;
+    color: navy;
+    text-align: center;
+}
+/*for the first three pictures*/
+.first-team{
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.first-team .counce{
+    text-decoration: none;
+}
+.first-team .counce:hover{
+    color: gold;
+}
+.resurrecta{
+    border: 2px blue;
+    border-radius: 5px;
+}
+.second-team{
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.second-team .counce{
+    text-decoration: none;
+}
+.second-team .counce:hover{
+    color: gold;
+    
+}
+.doris{
+    border: 2px solid navy;
+    border-radius: 10px;
+    line-height: 30px;
+    font-size: 20px; 
+}
+.prisica{
+    border: 2px solid navy;
+    border-radius: 10px; 
+    font-size: 20px;
+}
+.zita{
+    border: 2px solid navy;
+    border-radius: 10px; 
+    font-size: 20px;
+}
+.resurrecta{
+    border: 2px solid navy;
+    border-radius: 10px; 
+    font-size: 20px;
+}
+.paschaline{
+    border: 2px solid navy;
+    border-radius: 10px; 
+    font-size: 20px;
+}
+.veritas{
+    border: 2px solid navy;
+    border-radius: 10px; 
+    font-size: 20px;
+}
+@media(max-width:500px){
+    .first-team{
+        display: block;
+        flex-direction: column;
+    }
+    .second-team{
+        display: block;
+        flex-direction: column;
+    }
+    .container{
+        display: block;
+        flex-direction: column;
+        margin: 0;
+        border-bottom: 50px solid white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .charism{
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .cahrism .chari{
+        font-size: 15px;
+    }
+    .our-mission{
+        font-size: 25px;
+        border-bottom: 40px solid oldlace;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .number{
+        flex-direction: column;
+        text-align: center;
+        height: 600px;
+        line-height: 4px;
+    }
+    .sister{
+        font-size: 20px;
+        padding-top: 3px;
+    }
+    .school{
+        font-size: 20px;
+        padding-top: 3px;
+    }
+    .hospital{
+        font-size: 20px;
+        padding-top: 3px;
+    }
+    .ophanage{
+        font-size: 20px;
+        padding-top: 3px;
+    }
+    .team{
+        font-size:25px ;
+        padding-top: 5%;
+    }
+    .team .first-team{
+        margin-bottom: 10px;
+    }
+    .second-team{
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+    .get-in-touch{
+        display: block;
+        flex-direction: column;
+        line-height: 30px;
+    }
+    .foot-major{
+        display: block;
+        flex-direction: column;
+        line-height:10px ;
+        justify-items: center;
+        
+    }
+}
+/* for get in touch*/
+.get-in-touch{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.get-in-touch .f-a{
+    color: white;
+    text-decoration: none;
+}
+.get-in-touch .f-a:hover{
+    color: navy;
+    font-weight: bolder;
+}
+.menu-2 ul{
+    list-style: none;
+}
+.gt-in{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.menu-2 .useful{
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.request-prayer{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foot-major{
+    background-color: #000060;
+    width: 100%;
+    height:80px ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+/*for contact infor*/
+.contact-infor{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    line-height: 35pxpx;
+    height: auto;
+}
+.inp{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #000030;
+    border-radius: 10px;
+    width:300px ;
+    color: black;
+    height: 40px;
+}
+#send-message{
+    width:300px ;
+}
+.btn{
+    height: 40px;
+    width: 150px;
+    background-color: #000030;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.btn:hover{
+    background-color: gold;
+}
+@media(max-width: 500px){
+    .contact-infor{
+        display: block;
+        flex-direction: column;
+        margin-top: none;
+    }
+    .first-set{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .second-3{
+        display: block;
+        flex-direction: column;
+    }
+    .third-3{
+        display: block;
+        flex-direction: column;
+    }
+    .forth-3{
+        display: block;
+        flex-direction: column;
+    }
+    .fifth-3{
+        display: block;
+        flex-direction: column;
+    }
+    
+}
+/*for postulants*/
+.postulancy{
+    width: 400px;
+    border-radius: 100%;
+    height: 600px;
+    padding-top: 8%;
+}
+.postulant{
+    background-color:oldlace ;
+    justify-items: center;
+    text-align: center;
+    line-height: 16px;
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.postu-h{
+    color:#000030;
+}
+.postu-prayer{
+   justify-items: center; 
+}
+/*for registration form*/
+.form-backg{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;      
+}
+.form{
+    border: 2px solid #000030;
+    border-radius: 15px;
+    width: 550px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #000030;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+.h-reg{
+    font-size: 30px;
+    font-weight: bold;
+    color: navy;
+}
+.reg{
+    height: 40px;
+    outline: none;
+    color: black;
+    width:500px ;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.btn-reg{
+    height: 45px;
+    width: 150px;
+    background-color: navy;
+    border: navy solid 2px;
+    border-radius: 10px;
+    color: white;
+    }
+.btn-reg:hover{
+    background-color: blue;
+    transition: 1.5s;
+}
+.lbl{
+    color: navy;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*sisters of Jesus the Saviour photo gallery*/
+
+.photo{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    line-height: 25px;
+    justify-content: center;
+}
+.first-set{
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    
+}
+.second-3{
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+}
+.third-3{
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+}
+.forth-3{
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+}
+.fifth-3{
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+}
+/*prayer*/
+.pray{
+    background-color: oldlace;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+.pray-pray{
+    color: #000060;
+}
+.apostolat{
+    background-color: oldlace;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+}
+.desti{
+    padding: 5px;
+}
+.galla{
+    background-color: oldlace;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.ga{
+    color: #000060;
+}
+.fix{
+    background-image: url('./jesus.jpg');
+    background-attachment: fixed;
+}
+.slid-p{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/*For index.html*/
+.slider{
+    height: 100vh;
+    width: 95%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) opx 5px 15px;
+}
+.slide{
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    inset: 0;
+    animation: slide-show 12s infinite;
+}
+.slide-2{
+    animation-delay: 4s;
+}
+.slide-2{
+    animation-delay: 8s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  
+    }
+@keyframes slide-show{
+    0%{
+    opacity: 0;
+    }    
+
+10%{
+    opacity: 1;
+    }  
+    2%,
+    30%{
+    opacity: 1;
+    scale: 1.03;
+    } 
+    50%{
+        opacity:0 ;
+    } 
